@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+  <main class="h-full w-full md:h-[600px] md:w-[380px] border-2 border-black rounded-2xl p-5 bg-slate-200">
+
+    <!-- Calculator Tittle  -->
+    <div class="flex justify-between items-center">
+      <h2 class="font-bold">Mini Calculator</h2>
+    </div>
+    <!--Calculator Screen  -->
+    <div class="h-[150px] w-full mb-7 border bg-slate-100 grid grid-rows-2 gap-2">
+      <!-- Ans Part  -->
+      <div id="AnsPart" class="border">
+
+      </div>
+
+      <!-- Input Number  -->
+      <div id="inputComand" class="border text-2xl flex overflow-x-auto">
+
+      </div>
+
+    </div>
+
+    <!-- Calculator All Button -->
+    <div class="  w-full grid grid-cols-4 grid-rows-5 gap-x-6 gap-y-3">
+
+      <!-- Button 1 -->
+      <button class="btn text-white bg-gray-700"></button>
+      <!-- Button 2 -->
+      <button class="btn text-white bg-gray-700"></button>
+      <!-- Button 3  -->
+      <button class="btn text-white bg-gray-700"></button>
+      <!-- Button 4 -->
+      <button id="btnDivision" class="btn text-white bg-gray-700">/</button>
+      <!-- Button 5 -->
+      <button id="btnClear" class="btn text-white bg-gray-700">C</button>
+      <!-- Button 6 -->
+      <button id="btnParendthcis" class="btn text-white bg-gray-700">( )</button>
+      <!-- Button 7 -->
+      <button id="btn%" class="btn text-white bg-gray-700">%</button>
+      <!-- Button 8 -->
+      <button id="btnMultiplay" class="btn text-white bg-gray-700">*</button>
+      <!-- Button 9 -->
+      <button id="btn7" class="btn text-white bg-gray-700">7</button>
+      <!-- Button 10 -->
+      <button id="btn8" class="btn text-white bg-gray-700">8</button>
+      <!-- Button 11 -->
+      <button id="btn9" class="btn text-white bg-gray-700">9</button>
+      <!-- Button 12 -->
+      <button id="btnMinus" class="btn text-white bg-gray-700">-</button>
+      <!-- Button 13 -->
+      <button id="btn4" class="btn text-white bg-gray-700">4</button>
+      <!-- Button 14 -->
+      <button id="btn5" class="btn text-white bg-gray-700">5</button>
+      <!-- Button 15 -->
+      <button id="btn6" class="btn text-white bg-gray-700">6</button>
+      <!-- Button 16 -->
+      <button id="btnSummation" class="btn text-white bg-gray-700 ">+</button>
+      <!-- Button 17 -->
+      <button id="btn1" class="btn text-white bg-gray-700">1</button>
+      <!-- Button 18 -->
+      <button id="btn2" class="btn text-white bg-gray-700">2</button>
+      <!-- Button 19 -->
+      <button id="btn3" class="btn text-white bg-gray-700">3</button>
+      <!-- Button 20 -->
+      <button id="btnEqual" class="btn text-white bg-gray-700 row-span-2 h-full">=</button>
+      <!-- Button 21 -->
+      <button id="btnDot" class="btn text-white bg-gray-700">.</button>
+      <!-- Button 22 -->
+      <button id="btn0" class="btn text-white bg-gray-700 col-span-2">0</button>
+
+
+    </div>
+  </main>
+
+  <script src="script/function.js"></script>
+  <script src="script/clickButton.js"></script>
+</body>
+
+</html>
